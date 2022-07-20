@@ -11,8 +11,7 @@ h4,
 h5,
 h6,
 p,
-ul,
-a {
+ul {
     margin: 0;
     padding: 0;
 }
@@ -26,6 +25,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
 }
 
 .nav-item {
@@ -64,10 +64,78 @@ a {
     color: #fff;
 
 }
-.nav-link:hover::before{
+
+.nav-link:hover::before {
     width: 47%;
 }
-.nav-link:hover::after{
+
+.nav-link:hover::after {
     width: 47%;
 }
+
 /***** End header section  *****/
+
+/***** Banner section  *****/
+.banner {
+    min-height: 90vh;
+    align-items: center;
+
+}
+
+.banner h4 {
+    color: #008ed6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px
+}
+
+.banner h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 25px 0px;
+    font-weight: 700;
+}
+
+.banner p {
+    color: #999;
+    text-align: justify;
+}
+
+.btn-download {
+    color: rgb(255, 255, 255);
+    background: #008eb5;
+    border: 1px solid transparent;
+    padding: 10px 25px;
+    margin-top: 50px;
+}
+
+.btn-features {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.btn-download:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    color: #fff;
+}
+
+.btn-features:hover {
+    color: rgb(255, 255, 255);
+    background: #008eb5;
+    border: 1px solid transparent;
+    border: none;
+
+}
+
+.photo {
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+}
+
+/***** End Banner section  *****/
