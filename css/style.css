@@ -1,0 +1,73 @@
+/***** common utility *****/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/***** End common utility *****/
+
+/***** header section  *****/
+.header {
+    background-image: url('/images/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.nav-item {
+    padding: 0 8px;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.98);
+    padding: 0;
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #008ed6;
+    transition: 0.4s all ease-in-out;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #008ed6;
+    transition: 0.4s all ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff;
+
+}
+.nav-link:hover::before{
+    width: 47%;
+}
+.nav-link:hover::after{
+    width: 47%;
+}
+/***** End header section  *****/
