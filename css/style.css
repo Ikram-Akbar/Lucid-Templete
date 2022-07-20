@@ -145,7 +145,7 @@ ul {
     position: relative;
 }
 
-.product-overview p {
+.product-overview-info {
     margin-bottom: 10px;
     font-weight: 600;
     text-transform: uppercase;
@@ -153,9 +153,9 @@ ul {
     color: #008eb5;
     ;
 }
-.product-overview h2{
 
-}
+.product-overview h2 {}
+
 h2.text-center::before {
     content: "";
     left: 44%;
@@ -176,13 +176,45 @@ h2.text-center::after {
     background: #008eb5;
     position: absolute;
     transition: 0.4s all ease-in-out;
-    
+
 }
-h2.text-center:hover::before{
+
+h2.text-center:hover::before {
     width: 4%;
 }
-h2.text-center:hover::after{
+
+h2.text-center:hover::after {
     width: 4%;
+}
+
+
+.single-product {
+
+    text-align: center;
+}
+
+.icon {
+    margin-left: 38%;
+    margin-bottom: 20px;
+    width: 70px;
+    display: flex;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #008eb5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.icon i {
+    font-size: 25px;
+    color: #008eb5;
+}
+
+.icon-info h4 {
+    font-weight: 400;
 }
 
 /***** End product overview *****/
