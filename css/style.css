@@ -139,3 +139,50 @@ ul {
 }
 
 /***** End Banner section  *****/
+
+/***** product overview *****/
+.product-overview {
+    position: relative;
+}
+
+.product-overview p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #008eb5;
+    ;
+}
+.product-overview h2{
+
+}
+h2.text-center::before {
+    content: "";
+    left: 44%;
+    bottom: 34px;
+    width: 0;
+    height: 2px;
+    background: #008eb5;
+    position: absolute;
+    transition: 0.4s all ease-in-out;
+}
+
+h2.text-center::after {
+    content: "";
+    right: 47%;
+    bottom: 34px;
+    width: 0;
+    height: 2px;
+    background: #008eb5;
+    position: absolute;
+    transition: 0.4s all ease-in-out;
+    
+}
+h2.text-center:hover::before{
+    width: 4%;
+}
+h2.text-center:hover::after{
+    width: 4%;
+}
+
+/***** End product overview *****/
